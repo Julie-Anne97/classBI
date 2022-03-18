@@ -25,6 +25,27 @@ st.write(f"You selected {selectbox}")
 #The first argument to st.selectbox is the string to display and the second argument is a list of options to select. 
 #And then we display the selected value in the app using st.write method.
 
+#Plotly charts in streamlit
+#pip install plotly
+import plotly.graph_objects as go
+
+st.title("Welcome to Streamlit! Plotly Graphs")
+
+fig = go.Figure(
+    data=[go.Pie(
+        labels=['A', 'B', 'C'],
+        values=[30, 20, 50]
+    )]
+)
+fig = fig.update_traces(
+    hoverinfo='label+percent',
+    textinfo='value',
+    textfont_size=15
+)
+
+st.write("Pie chart in Streamlit")
+st.plotly_chart(fig)
+
 #Line chart in streamlit
 import numpy as np
 st.title("Welcome to Streamlit! Line chart")

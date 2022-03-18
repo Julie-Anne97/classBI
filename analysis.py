@@ -18,8 +18,8 @@ st.write(
 st.title("Welcome to Streamlit! Select Box")
 
 selectbox = st.selectbox(
-    "Select yes or no",
-    ["Yes", "No"]
+    "Select a person",
+    ["Perrine", "Julie-Anne", "Edona", "Ismail"]
 )
 st.write(f"You selected {selectbox}")
 #The first argument to st.selectbox is the string to display and the second argument is a list of options to select. 

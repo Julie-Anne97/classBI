@@ -14,3 +14,13 @@ st.write(
       'B': [5, 6, 7, 8]
     })
 ) 
+#Select box in streamlit
+st.title("Welcome to Streamlit! Select Box")
+
+selectbox = st.selectbox(
+    "Select yes or no",
+    ["Yes", "No"]
+)
+st.write(f"You selected {selectbox}")
+#The first argument to st.selectbox is the string to display and the second argument is a list of options to select. 
+#And then we display the selected value in the app using st.write method.

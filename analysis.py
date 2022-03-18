@@ -36,25 +36,7 @@ chart_data = pd.DataFrame(
 )
 
 st.line_chart(chart_data)
-#Plotly charts in streamlit
-#pip install plotly
-import plotly.graph_objects as go
 
-st.title("Welcome to Streamlit! Plotly Graphs")
-
-fig = go.Figure(
-    data=[go.Pie(
-        labels=['A', 'B', 'C'],
-        values=[30, 20, 50]
-    )]
-)
-fig = fig.update_traces(
-    hoverinfo='label+percent',
-    textinfo='value',
-    textfont_size=15
-)
-st.write("Pie chart in Streamlit")
-st.plotly_chart(fig)
 #Sidebar in streamlit
 st.title("Welcome to Streamlit! Slidebar")
 

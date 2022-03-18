@@ -53,6 +53,5 @@ fig = fig.update_traces(
     textinfo='value',
     textfont_size=15
 )
-
 st.write("Pie chart in Streamlit")
 st.plotly_chart(fig)
